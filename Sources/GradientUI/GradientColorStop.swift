@@ -1,7 +1,7 @@
 import SwiftUI
 import PixelColor
 
-public struct GradientColorStop {
+public struct GradientColorStop: Equatable {
 
     public var location: CGFloat
     public var color: PixelColor
