@@ -45,7 +45,7 @@ public struct GradientView: View {
     
     private var stops: [Gradient.Stop] {
         indexStops.map(\.stop).map { stop in
-            Gradient.Stop(color: stop.color.color, location: stop.location)
+            Gradient.Stop(color: stop.color.displayP3, location: stop.location)
         }
     }
     
@@ -263,13 +263,13 @@ public struct GradientView: View {
         size: CGSize
     ) -> some View {
         VStack(spacing: 0) {
-            ColorPicker(selection: .init(get: {
-                stop.wrappedValue.color.color
+            ColorPicker(selection: PixelColor.mapBinding(Binding(get: {
+                stop.wrappedValue.color
             }, set: { newColor in
                 instantEdit(true)
-                stop.wrappedValue.color = .init(newColor)
+                stop.wrappedValue.color = newColor
                 instantEdit(false)
-            })) {
+            }))) {
                 EmptyView()
             }
             .labelsHidden()
