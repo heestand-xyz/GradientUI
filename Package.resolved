@@ -1,13 +1,13 @@
 {
-  "originHash" : "f1236308d6dc8411ade31c9c1bdf9e0886878dd59d639b67d98075f8fb22416d",
+  "originHash" : "82c271bf47a843eeab7a10d7bd23395f91e0b735ef43a010dc32c565dc6ea4ef",
   "pins" : [
     {
       "identity" : "pixelcolor",
       "kind" : "remoteSourceControl",
       "location" : "http://github.com/heestand-xyz/PixelColor",
       "state" : {
-        "revision" : "985d12c8339bc0ae08803a0abde32c2e4696c4ce",
-        "version" : "2.2.2"
+        "revision" : "401e9e08e6e9c8a82f4fdfcf2ebace1b6a72545a",
+        "version" : "3.1.0"
       }
     }
   ],

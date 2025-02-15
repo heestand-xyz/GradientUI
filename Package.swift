@@ -15,7 +15,7 @@ let package = Package(
             targets: ["GradientUI"]),
     ],
     dependencies: [
-        .package(url: "http://github.com/heestand-xyz/PixelColor", from: "2.2.2")
+        .package(url: "http://github.com/heestand-xyz/PixelColor", from: "3.1.0")
     ],
     targets: [
         .target(
